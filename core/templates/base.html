@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+
+    <link rel="stylesheet" href="{% static 'catalogo/css/base_style.css' %}">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <main class="screen-main">
+        <header class="header-main" >
+                <a href="{% url 'home' %}" class="text-xl home-link">Flix</a>
+        </header>
+        <main class="main-content" >
+        
+            {% block content %}{% endblock %}
+        </main>
+    </main>
+</body>
+</html>

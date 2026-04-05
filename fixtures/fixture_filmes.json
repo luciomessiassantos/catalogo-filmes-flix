@@ -1,0 +1,226 @@
+[
+  {
+    "model": "core.categoria",
+    "pk": 1,
+    "fields": { "nome": "AC" }
+  },
+  {
+    "model": "core.categoria",
+    "pk": 2,
+    "fields": { "nome": "CO" }
+  },
+  {
+    "model": "core.categoria",
+    "pk": 3,
+    "fields": { "nome": "DR" }
+  },
+  {
+    "model": "core.categoria",
+    "pk": 4,
+    "fields": { "nome": "TE" }
+  },
+  {
+    "model": "core.categoria",
+    "pk": 5,
+    "fields": { "nome": "FI" }
+  },
+  {
+    "model": "core.categoria",
+    "pk": 6,
+    "fields": { "nome": "RO" }
+  },
+  {
+    "model": "core.categoria",
+    "pk": 7,
+    "fields": { "nome": "SU" }
+  },
+  {
+    "model": "core.categoria",
+    "pk": 8,
+    "fields": { "nome": "AV" }
+  },
+  {
+    "model": "core.categoria",
+    "pk": 9,
+    "fields": { "nome": "FA" }
+  },
+  {
+    "model": "core.categoria",
+    "pk": 10,
+    "fields": { "nome": "MI" }
+  },
+  {
+    "model": "core.categoria",
+    "pk": 11,
+    "fields": { "nome": "CR" }
+  },
+  {
+    "model": "core.filme",
+    "pk": 1,
+    "fields": {
+      "titulo": "O Abutre",
+      "descricao": "Lou Bloom (Jake Gyllenhaal), um jovem ambicioso e moralmente questionável, descobre o mundo do jornalismo sensacionalista em Los Angeles. Ele começa a filmar crimes e acidentes chocantes para vender para a TV, mas sua falta de limites o leva a manipular cenas e arriscar vidas para conseguir as imagens mais brutais e lucrativas.",
+      "categorias": [7, 11],
+      "ano_lancamento": 2014,
+      "nota": 7.8,
+      "duracao_segundos": 7020,
+      "imagem": "filmes/20170622-o-abutre-nightcrawler-vitrine.jpg"
+    }
+  },
+  {
+    "model": "core.filme",
+    "pk": 2,
+    "fields": {
+      "titulo": "Círculo de Fogo",
+      "descricao": "A Terra é atacada por criaturas gigantes conhecidas como Kaiju, que emergem do mar. Para combatê-los, a humanidade cria os Jaegers, robôs gigantes controlados por dois pilotos através de uma conexão neural. Com os Jaegers sendo destruídos, a última esperança é um piloto em desgraça e uma novata que comandam um modelo obsoleto em uma missão suicida.",
+      "categorias": [1, 5, 8],
+      "ano_lancamento": 2013,
+      "nota": 7.0,
+      "duracao_segundos": 7920,
+      "imagem": "filmes/cirsulo_de_fogo.jpg"
+    }
+  },
+  {
+    "model": "core.filme",
+    "pk": 3,
+    "fields": {
+      "titulo": "Devoradores de Estrelas",
+      "descricao": "Ryland Grace (Ryan Gosling), um professor de ciências, acorda sozinho em uma espaçonave a anos-luz da Terra, sem memória de sua identidade ou missão. Ele descobre que foi enviado para salvar a humanidade de um evento catastrófico que está drenando a energia do Sol, contando apenas com seu conhecimento científico para desvendar o mistério e encontrar uma solução.",
+      "categorias": [5, 1, 10],
+      "ano_lancamento": 2026,
+      "nota": null,
+      "duracao_segundos": 8400,
+      "imagem": "filmes/devoradores_de_estrelas.jpeg"
+    }
+  },
+  {
+    "model": "core.filme",
+    "pk": 4,
+    "fields": {
+      "titulo": "Drive",
+      "descricao": "Um dublê de Hollywood, que também trabalha como motorista de fuga para o submundo, se vê em uma perigosa enrascada após ajudar o marido de sua vizinha a roubar uma loja de penhores. Perseguido por gângsteres, ele usa suas habilidades para proteger a mulher que ama.",
+      "categorias": [1, 7, 11],
+      "ano_lancamento": 2011,
+      "nota": 7.8,
+      "duracao_segundos": 6000,
+      "imagem": "filmes/drive.jpg"
+    }
+  },
+  {
+    "model": "core.filme",
+    "pk": 5,
+    "fields": {
+      "titulo": "Duna: Parte 2",
+      "descricao": "Paul Atreides se une aos Fremen e à sua líder Chani em uma guerra de vingança contra os Harkonnen e os conspiradores que destruíram sua família. Enquanto lida com o peso de seu destino, ele tenta impedir um futuro terrível que só ele pode prever.",
+      "categorias": [1, 5, 8, 9],
+      "ano_lancamento": 2024,
+      "nota": 8.7,
+      "duracao_segundos": 9960,
+      "imagem": "filmes/duna_pt2.jpg"
+    }
+  },
+  {
+    "model": "core.filme",
+    "pk": 6,
+    "fields": {
+      "titulo": "Duna",
+      "descricao": "Em um futuro distante, o jovem Paul Atreides (Timothée Chalamet) viaja com sua família para o perigoso planeta desértico de Arrakis, a única fonte da substância mais valiosa do universo, a 'especiaria'. Quando uma traição os destrói, Paul lidera uma revolta contra seus inimigos e precisa aceitar seu destino enigmático para garantir o futuro de sua família e de seu povo.",
+      "categorias": [1, 5, 8, 9],
+      "ano_lancamento": 2021,
+      "nota": 8.0,
+      "duracao_segundos": 9300,
+      "imagem": "filmes/duna.jpg"
+    }
+  },
+  {
+    "model": "core.filme",
+    "pk": 7,
+    "fields": {
+      "titulo": "Sem Limites",
+      "descricao": "Um escritor fracassado, Eddie Morra (Bradley Cooper), descobre uma pílula revolucionária que lhe permite acessar 100% de sua capacidade cerebral. A droga o torna um gênio instantâneo, capaz de aprender qualquer coisa, dominar o mercado financeiro e atrair a atenção de poderosos magnatas, mas seus efeitos colaterais e os perigos de seu novo estilo de vida logo se tornam uma ameaça.",
+      "categorias": [1, 7, 5],
+      "ano_lancamento": 2011,
+      "nota": 7.4,
+      "duracao_segundos": 6300,
+      "imagem": "filmes/limitless.jpg"
+    }
+  },
+  {
+    "model": "core.filme",
+    "pk": 8,
+    "fields": {
+      "titulo": "Os Suspeitos",
+      "descricao": "Keller Dover (Hugh Jackman), um pai de família, enfrenta o pesadelo do desaparecimento de sua filha e da filha de seus amigos. Desesperado e frustrado com a falta de resultados da polícia, ele decide fazer justiça com as próprias mãos, sequestrando o principal suspeito para extrair uma confissão a qualquer custo.",
+      "categorias": [3, 7, 10, 11],
+      "ano_lancamento": 2013,
+      "nota": 8.1,
+      "duracao_segundos": 9180,
+      "imagem": "filmes/maxresdefault.jpg"
+    }
+  },
+  {
+    "model": "core.filme",
+    "pk": 9,
+    "fields": {
+      "titulo": "O Protetor",
+      "descricao": "Robert McCall (Denzel Washington), um ex-agente de operações especiais que forjou sua própria morte para viver em paz, conhece uma jovem prostituta que é brutalizada pela máfia russa. Incapaz de ignorar a injustiça, ele sai de sua aposentadoria para usar suas habilidades letais e proteger a garota, desencadeando uma guerra contra os criminosos.",
+      "categorias": [1, 7, 11],
+      "ano_lancamento": 2014,
+      "nota": 7.2,
+      "duracao_segundos": 7920,
+      "imagem": "filmes/o_protetor.jpg"
+    }
+  },
+  {
+    "model": "core.filme",
+    "pk": 10,
+    "fields": {
+      "titulo": "Se7en - Os Sete Pecados Capitais",
+      "descricao": "Os detetives Somerset (Morgan Freeman), prestes a se aposentar, e Mills (Brad Pitt), jovem e impetuoso, investigam uma série de assassinatos brutais em uma cidade sombria. O assassino, um psicopata meticuloso, está matando suas vítimas de maneiras que representam cada um dos sete pecados capitais, guiando os detetives em um jogo macabro com um final chocante.",
+      "categorias": [7, 10, 11],
+      "ano_lancamento": 1995,
+      "nota": 8.6,
+      "duracao_segundos": 7620,
+      "imagem": "filmes/se7en.jpg"
+    }
+  },
+  {
+    "model": "core.filme",
+    "pk": 11,
+    "fields": {
+      "titulo": "Stalker",
+      "descricao": "Em um futuro indefinido, a Zona é um lugar misterioso e isolado onde as leis da física não se aplicam, e onde existe um quarto que realiza desejos. Um escritor e um cientista contratam um Stalker (guia) para levá-los até o local, em uma jornada filosófica e psicológica sobre a natureza dos desejos e da fé.",
+      "categorias": [5, 10, 3],
+      "ano_lancamento": 1979,
+      "nota": 8.1,
+      "duracao_segundos": 9720,
+      "imagem": "filmes/stalker.jpg"
+    }
+  },
+  {
+    "model": "core.filme",
+    "pk": 12,
+    "fields": {
+      "titulo": "Taxi Driver",
+      "descricao": "Travis Bickle (Robert De Niro), um veterano da Guerra do Vietnã, trabalha como taxista noturno nas ruas decadentes de Nova York. A insônia e a solidão o levam a uma espiral de paranoia e revolta contra o que ele vê como a podridão da cidade, o que o faz planejar um ato de violência 'purificadora' para 'limpar' as ruas.",
+      "categorias": [3, 7, 11],
+      "ano_lancamento": 1976,
+      "nota": 8.2,
+      "duracao_segundos": 6840,
+      "imagem": "filmes/taxi_driver.jpg"
+    }
+  },
+  {
+    "model": "core.filme",
+    "pk": 13,
+    "fields": {
+      "titulo": "Zodíaco",
+      "descricao": "Baseado em uma história real, o filme acompanha a obsessiva caçada ao 'Assassino do Zodíaco', que aterrorizou São Francisco nos anos 60 e 70. Cartunista, repórter e detetives mergulham em uma investigação angustiante e sem fim.",
+      "categorias": [7, 10, 11],
+      "ano_lancamento": 2007,
+      "nota": 7.7,
+      "duracao_segundos": 9420,
+      "imagem": "filmes/zodiaco.jpg"
+    }
+  }
+]

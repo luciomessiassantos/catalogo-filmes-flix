@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'catalogo/css/home_style.css' %}">
+{% endblock %}
+
+{% block content %}
+    
+    <main class="content">
+        <header class="content-header">
+            {% if destaque %}
+                <section class="destaque-card">
+                    <img src="{{ destaque.imagem.url }}" class="destaque-image" />
+                    <div class="destaque-info">
+                        <h1>{{ destaque.titulo }} ({{ destaque.ano_lancamento }})</h1>
+                        <p>{{ destaque.descricao|truncatewords:20}} </p>
+                        <p class="nota">⭐ {{ destaque.nota|default:"Sem nota" }}</p>
+                        <section class="movie-category">
+                            {% for categoria in destaque.categorias.all %}
+                                <span class="categoria-badge">{{ categoria.get_nome_display }}</span>
+                            {% empty %}
+                                <span>Sem categorias</span>
+                            {% endfor %}
+                        </section>
+                    </div>
+                </section>
+            {% endif %}
+        </header>
+        
+        <section class="content-main-home">
+
+                    {% for nome_categoria, filmes_categoria in carrossel.items %}
+                <section class="categoria-carrossel">
+                    <h2 class="categoria-titulo">{{ nome_categoria }}</h2>
+                    <div class="carrossel-container">
+                        <div class="carrossel-track">
+                            {% for filme in filmes_categoria %}
+                                {% include "components/movie.html" with id=filme.id titulo=filme.titulo descricao=filme.descricao nota=filme.nota categorias=filme.categorias.all image=filme.imagem ano=filme.ano_lancamento %}
+                            {% endfor %}
+                        </div>
+                </div>
+            </section>
+        {% empty %}
+            <p class="sem-filmes">Nenhuma categoria com filmes disponível.</p>
+        {% endfor %}
+
+            <section class="content-section">
+                {% if movies %}
+                    {% for movie in movies %}
+                        {% include "components/movie.html" with id=movie.id titulo=movie.titulo descricao=movie.descricao nota=movie.nota categorias=movie.categorias.all image=movie.imagem ano=movie.ano_lancamento %}
+                    {% endfor %}
+                {% else %}
+                    <p>Sem Filmes</p>
+                {% endif %}
+            
+            </section>
+            <footer class="footer">
+                    <p>&copy;Flix LTDA</p>
+            </footer>
+        </section>
+        
+    </main>
+{% endblock %}

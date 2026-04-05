@@ -1,0 +1,35 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="{% static 'catalogo/css/movie/movie_style.css' %}">
+</head>
+<body>
+    <div class="movie-card">
+        <section class="image-container">
+            <img src="{{ image.url }}" class="movie-image" />
+        </section>
+        
+            <div class="movie-info">
+        <a href="{% url 'filme_detalhe' id=id %}" class="titulo">
+            <h1>{{ titulo }}</h1>
+        </a>
+        <p class="ano">{{ ano }}</p>
+        <p class="descricao">{{ descricao|truncatewords:20 }}</p>
+        <p class="nota">⭐ {{ nota|default:"Sem nota" }}</p>
+        <section class="movie-category">
+            {% for categoria in categorias %}
+                <span class="categoria-badge">{{ categoria.get_nome_display }}</span>
+            {% empty %}
+                <span>Sem categorias</span>
+            {% endfor %}
+        </section>
+    </div>
+    </div>
+</body>
+</html>

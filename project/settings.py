@@ -76,9 +76,9 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'biblioteca',
-        'USER': 'admin',
-        'PASSWORD': 'secret',
+        'NAME': 'catalogo_filmes',
+        'USER': 'seu_usuario',
+        'PASSWORD': 'sua_senha',
         'HOST': 'localhost',
         'PORT': '5432',
     }
